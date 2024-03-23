@@ -1,6 +1,6 @@
-local conf = require "nvchad.configs.cmp"
+local opts = require "nvchad.configs.cmp"
 
-conf.sources = {
+opts.sources = {
   { name = "copilot", group_index = 2 },
   { name = "nvim_lsp", group_index = 2 },
   { name = "luasnip", group_index = 2 },
@@ -9,4 +9,4 @@ conf.sources = {
   { name = "path", group_index = 2 },
 }
 
-return conf
+return opts
