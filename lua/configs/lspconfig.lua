@@ -5,6 +5,7 @@ local servers = {
   html = {},
   cssls = {},
   volar = {},
+  eslint = {},
 
   tailwindcss = {
     root_dir = function(...)
