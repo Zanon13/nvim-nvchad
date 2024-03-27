@@ -1,5 +1,19 @@
 return {
   {
+    "kdheepak/lazygit.nvim",
+    cmd = {
+      "LazyGit",
+      "LazyGitConfig",
+      "LazyGitCurrentFile",
+      "LazyGitFilter",
+      "LazyGitFilterCurrentFile"
+    },
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+  },
+
+  {
     "NeogitOrg/neogit",
     event = "VeryLazy",
     dependencies = {
@@ -19,6 +33,14 @@ return {
       require "configs.copilot"
     end
 
+  },
+
+  {
+    "folke/todo-comments.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    opts = {}
   },
 
   {
